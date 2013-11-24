@@ -1,0 +1,5 @@
+-cpu=rx600
+-lang=c
+-output=obj="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\dbsct.obj"
+"D:\DESARROLLOS\WE_RX62N\PRB_RX62N\dbsct.c"
+-nologo

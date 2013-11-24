@@ -1,0 +1,3 @@
+-cpu=rx600
+-output="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Debug\PRB_RX62N.lib"
+-head=runtime,stdio,stdlib,string,new

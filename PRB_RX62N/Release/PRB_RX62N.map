@@ -1,0 +1,79 @@
+Optimizing Linkage Editor (V.10.02.00.000)        21-Apr-2013 10:13:59
+
+*** Options ***
+
+-subcommand=D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\PRB_RX62N.hlk
+-noprelink
+-nodebug
+-rom=D=R,D_1=R_1,D_2=R_2
+-nomessage
+-list="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\PRB_RX62N.map"
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/01000,PResetPRG/0FFFF8000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFF8100,FIXEDVECT/0FFFFFFD0
+-nologo
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\dbsct.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\delay.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\intprg.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\PRB_RX62N.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\resetprg.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\sbrk.obj"
+-input="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\vecttbl.obj"
+-library="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\PRB_RX62N.lib"
+-output="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Release\PRB_RX62N.abs"
+-end
+
+*** Error information ***
+
+** L1100 (W) Cannot find "SU" specified in option "start"
+** L1100 (W) Cannot find "L" specified in option "start"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00001000  00001000         0   1
+R_1
+                                  00001000  00001001         2   1
+B_2
+                                  00001002  00001002         0   2
+R_2
+                                  00001002  00001002         0   2
+B
+                                  00001004  00001403       400   4
+R
+                                  00001404  00001407         4   4
+SI
+                                  00001408  00001707       300   4
+PResetPRG
+                                  ffff8000  ffff8029        2a   1
+C_1
+                                  ffff8100  ffff8100         0   1
+C_2
+                                  ffff8100  ffff8100         0   2
+C
+                                  ffff8100  ffff8117        18   4
+C$DSEC
+                                  ffff8118  ffff813b        24   4
+C$BSEC
+                                  ffff813c  ffff8153        18   4
+C$VECT
+                                  ffff8154  ffff8553       400   4
+D_1
+                                  ffff8554  ffff8555         2   1
+D_2
+                                  ffff8556  ffff8556         0   2
+D
+                                  ffff8558  ffff855b         4   4
+P
+                                  ffff855c  ffff8744       1e9   1
+PIntPRG
+                                  ffff8745  ffff8895       151   1
+W_1
+                                  ffff8896  ffff8896         0   1
+W_2
+                                  ffff8896  ffff8896         0   2
+W
+                                  ffff8898  ffff8898         0   4
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4

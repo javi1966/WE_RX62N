@@ -1,0 +1,6 @@
+-cpu=rx600
+-lang=c
+-output=obj="D:\DESARROLLOS\WE_RX62N\PRB_RX62N\Debug\intprg.obj"
+-debug
+"D:\DESARROLLOS\WE_RX62N\PRB_RX62N\intprg.c"
+-nologo
